@@ -4,7 +4,7 @@
 
 This dataset contains two types of intercepted network packets: "normal" network traffic packets (i.e. a variety of non-malicious traffic types) and attacks against a 5G Core implemented with free5GC. The captures were collected using tshark or Wireshark on 4 different network interfaces within the 5G core. Those interfaces and where they sit within the system are outlined in the 5GNetworkDiagram figure. Files that start with "allcap" contain packets that were recorded on all four interfaces simultaneously; other \*.pcapng files represent the same data that has been broken out into one of the four interfaces.
 
-![5GNetworkDiagram.png](attachment:5GNetworkDiagram.png)
+![5GNetworkDiagram.png](5GNetworkDiagram.png)
 
 # Citation and Contact
 If you use our dataset, please cite it:
@@ -316,8 +316,6 @@ Included with the dataset are two versions of the file used to process the data 
 
 Without modification, the data preparation files require **at least** 96 GB of memory and several hours to process the data. This issue can likely be overcome by changing the instances of the `sniff(...)` function to process each packet without storing packets sequentially in memory.
 
-Special thanks to Christopher Becker and Jesse Cooper
-
-This the end of the description.  
+Special thanks to Christopher Becker and Jesse Cooper.
   
    
